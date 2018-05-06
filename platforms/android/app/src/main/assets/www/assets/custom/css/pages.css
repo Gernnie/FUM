@@ -115,12 +115,12 @@
 }
 
 .page[data-page=careers] .hero  .hero-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 24px;
 }
 
 .page[data-page=careers] .content-block-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 20px;
 	overflow: hidden;
 }
@@ -214,12 +214,16 @@
 	color: #000000;
 }
 
+.theme-fum .page[data-page=careers] .list-block-benefits .item-media i {
+	color: #976DD0;
+}
+
 .layout-dark .page[data-page=careers] .list-block-benefits .item-media i {
 	color: rgba(255, 255, 255, 0.87);
 }
 
 .page[data-page=careers] .list-block-benefits .item-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 15px;
 }
 
@@ -512,7 +516,7 @@
 }
 
 .page[data-page=coming-soon] .coming-soon-title {
-  font-family: 'Roboto Slab';
+  font-family: 'Lato';
 	font-size: 24px;
   line-height: 28px;
 	margin-bottom: 8px;
@@ -581,7 +585,7 @@
 */
 
 .page[data-page=cookie-policy] .content-block-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 15px;
 	overflow: hidden;
 }
@@ -652,7 +656,7 @@
 .page[data-page=faq] .accordion-item .item-title {
 	-webkit-box-orient: vertical;
   display: -webkit-box;
-  font-family: 'Roboto Slab';
+  font-family: 'Lato';
 	font-size: 15px;
   -webkit-line-clamp: 2;
   line-height: 19px;
@@ -754,7 +758,7 @@
 
 .page[data-page=home] .slider-hero .slide-title {
 	color: #FFFFFF;
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 20px;
 }
 
@@ -780,13 +784,13 @@
 }
 
 .page[data-page=home] .section-features .content-block-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 20px;
 	overflow: hidden;
 }
 
 .page[data-page=home] .section-features .features-list .item-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 }	
 
 .page[data-page=home] .section-features .features-list .item-text {
@@ -821,6 +825,8 @@
 .theme-bluegray .page[data-page=home] .section-features .features-list .item-media i {	color: #607D8B; }
 .theme-white .page[data-page=home] .section-features .features-list .item-media i {	color: #FFFFFF; }
 .theme-black .page[data-page=home] .section-features .features-list .item-media i {	color: #000000; }
+
+.theme-fum .page[data-page=home] .section-features .features-list .item-media i {	color: #976DD0; }
 
 .layout-dark .page[data-page=home] .section-features .features-list .item-media i {
 	color: rgba(255, 255, 255, 0.87);
@@ -1130,6 +1136,10 @@
 	background-color: #000000;
 }
 
+.theme-fum .page[data-page=otp-verification] .otp-digit.filled {
+	background-color: #976DD0;
+}
+
 /*
 |------------------------------------------------------------------------------
 | Pattern Lock
@@ -1210,6 +1220,7 @@
 .theme-bluegray .page[data-page=pattern-lock] .patt-dots { background-color: #607D8B; }
 .theme-white .page[data-page=pattern-lock] .patt-dots { background-color: #FFFFFF; }
 .theme-black .page[data-page=pattern-lock] .patt-dots { background-color: #000000; }
+.theme-fum .page[data-page=pattern-lock] .patt-dots { background-color: #976DD0; }
 
 .page[data-page=pattern-lock] .patt-dots {
 	background-color: #FFFFFF;
@@ -1222,7 +1233,7 @@
 */
 
 .page[data-page=privacy-policy] .content-block-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 15px;
 	overflow: hidden;
 }
@@ -1633,6 +1644,10 @@
 	background-color: #000000;
 }
 
+.theme-fum .panel .panel-header {
+	background-color: #976DD0;
+}
+
 .panel .user-info {
 	text-align: center;
 }
@@ -1822,7 +1837,7 @@
 */
 
 .page[data-page=terms] .content-block-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 15px;
 	overflow: hidden;
 }
@@ -2061,7 +2076,7 @@
 }
 
 .page[data-page=walkthrough] .walkthrough-slide .slide-title {
-	font-family: 'Roboto Slab';
+	font-family: 'Lato';
 	font-size: 20px;
 	margin: 8px 0;
 	padding: 0 16px;

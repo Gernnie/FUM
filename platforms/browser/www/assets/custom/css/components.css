@@ -118,6 +118,10 @@
 	background-color: #000000;
 }
 
+.theme-fum .page[data-page=layout-grids] [class*='col-'] {
+	background-color: #976DD0;
+}
+
 /*
 |------------------------------------------------------------------------------
 | Pricing Table

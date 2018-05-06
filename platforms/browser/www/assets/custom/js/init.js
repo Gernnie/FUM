@@ -59,7 +59,7 @@ $$(document).on('ajaxComplete', function (e) {
 
 $$(document).on('pageInit', function(e) {
 	if (sessionStorage.getItem('nectarMaterialThemeColor')) {
-		$$('body').removeClass('theme-red theme-pink theme-purple theme-deeppurple theme-indigo theme-blue theme-lightblue theme-cyan theme-teal theme-green theme-lightgreen theme-lime theme-yellow theme-amber theme-orange theme-deeporange theme-brown theme-gray theme-bluegray theme-white theme-black');
+		$$('body').removeClass('theme-red theme-pink theme-purple theme-deeppurple theme-indigo theme-blue theme-lightblue theme-cyan theme-teal theme-green theme-lightgreen theme-lime theme-yellow theme-amber theme-orange theme-deeporange theme-brown theme-gray theme-bluegray theme-white theme-black theme-fum');
 		$$('body').addClass('theme-' + sessionStorage.getItem('nectarMaterialThemeColor'));
 	}
 	
