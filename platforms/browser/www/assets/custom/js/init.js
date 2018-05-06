@@ -43,12 +43,13 @@ window.$$ = Dom7;
 |------------------------------------------------------------------------------
 */
 
+// This is annoying on small requests
 $$(document).on('ajaxStart', function (e) {
-	myApp.showIndicator();
+	//myApp.showIndicator();
 });
 
 $$(document).on('ajaxComplete', function (e) {
-	myApp.hideIndicator();
+	//myApp.hideIndicator();
 });
 
 /*
