@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77219f9f-2b08-4741-933e-84c744ec2699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/custom/js/init.js" afterPath="$PROJECT_DIR$/www/assets/custom/js/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/walkthrough.html" afterPath="$PROJECT_DIR$/www/walkthrough.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/themes.html" afterPath="$PROJECT_DIR$/www/themes.html" />
     </list>
     <ignored path="HelloWorldApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847" vertical-offset="1275" max-vertical-offset="10098">
-              <caret line="102" column="54" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.7044199" vertical-offset="612" max-vertical-offset="10098">
+              <caret line="51" column="76" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -47,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="walkthrough.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="walkthrough.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/walkthrough.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31733334" vertical-offset="51" max-vertical-offset="1071">
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="51" max-vertical-offset="1071">
               <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding />
             </state>
@@ -267,8 +267,28 @@
       <file leaf-file-name="themes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/themes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.192307" vertical-offset="4997" max-vertical-offset="6001">
-              <caret line="308" column="55" selection-start-line="308" selection-start-column="55" selection-end-line="308" selection-end-column="55" />
+            <state vertical-scroll-proportion="-7.230769" vertical-offset="4997" max-vertical-offset="6001">
+              <caret line="305" column="64" selection-start-line="305" selection-start-column="64" selection-end-line="305" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemWebViewClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/cordova-android/framework/src/org/apache/cordova/engine/SystemWebViewClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2230" max-vertical-offset="6460">
+              <caret line="139" column="63" selection-start-line="139" selection-start-column="63" selection-end-line="139" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="acknowledgements.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/acknowledgements.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.076923" vertical-offset="3097" max-vertical-offset="4386">
+              <caret line="193" column="42" selection-start-line="193" selection-start-column="42" selection-end-line="193" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -279,26 +299,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="1411">
               <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pages.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/custom/css/pages.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.464286" vertical-offset="27790" max-vertical-offset="36125">
-              <caret line="1647" column="30" selection-start-line="1647" selection-start-column="30" selection-end-line="1647" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="components.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/custom/css/components.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1839" max-vertical-offset="4046">
-              <caret line="116" column="60" selection-start-line="116" selection-start-column="60" selection-end-line="116" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -331,12 +331,12 @@
         <option value="$PROJECT_DIR$/www/home.html" />
         <option value="$PROJECT_DIR$/www/assets/custom/css/components.css" />
         <option value="$PROJECT_DIR$/www/assets/custom/css/pages.css" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/assets/vendor/framework7/css/framework7.material.colors.css" />
-        <option value="$PROJECT_DIR$/www/themes.html" />
         <option value="$PROJECT_DIR$/www/assets/vendor/framework7/css/framework7.material.colors.min.css" />
         <option value="$PROJECT_DIR$/www/assets/custom/js/init.js" />
         <option value="$PROJECT_DIR$/www/walkthrough.html" />
+        <option value="$PROJECT_DIR$/www/themes.html" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -348,8 +348,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="148" />
-    <option name="y" value="163" />
+    <option name="x" value="100" />
+    <option name="y" value="120" />
     <option name="width" value="1669" />
     <option name="height" value="857" />
   </component>
@@ -618,7 +618,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="148" y="163" width="1669" height="857" extended-state="0" />
+    <frame x="100" y="120" width="1669" height="857" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965517" sideWeight="0.49969345" order="-1" side_tool="false" content_ui="tabs" />
@@ -837,14 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.464286" vertical-offset="27790" max-vertical-offset="36125">
           <caret line="1647" column="30" selection-start-line="1647" selection-start-column="30" selection-end-line="1647" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/themes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.192307" vertical-offset="4997" max-vertical-offset="6001">
-          <caret line="308" column="55" selection-start-line="308" selection-start-column="55" selection-end-line="308" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1080,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847" vertical-offset="1275" max-vertical-offset="10098">
-          <caret line="102" column="54" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="986">
@@ -1098,8 +1082,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/walkthrough.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31733334" vertical-offset="51" max-vertical-offset="1071">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="51" max-vertical-offset="1071">
           <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/themes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.230769" vertical-offset="4997" max-vertical-offset="6001">
+          <caret line="305" column="64" selection-start-line="305" selection-start-column="64" selection-end-line="305" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cordova-android/framework/src/org/apache/cordova/engine/SystemWebViewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2230" max-vertical-offset="6460">
+          <caret line="139" column="63" selection-start-line="139" selection-start-column="63" selection-end-line="139" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/acknowledgements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.076923" vertical-offset="3097" max-vertical-offset="4386">
+          <caret line="193" column="42" selection-start-line="193" selection-start-column="42" selection-end-line="193" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7044199" vertical-offset="612" max-vertical-offset="10098">
+          <caret line="51" column="76" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
           <folding />
         </state>
       </provider>
