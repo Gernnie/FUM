@@ -29,12 +29,12 @@
     <feature name="FileTransfer">
         <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
     </feature>
-    <name>HelloWorldApp</name>
+    <name>FUM</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        FUM App
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="grant.madsen@threepointturn.com" href="http://www.threepointturn.com">
+        Threepointturn Team
     </author>
     <content src="index.html" />
     <access origin="*" />
