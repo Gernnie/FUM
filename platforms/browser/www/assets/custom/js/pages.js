@@ -1469,3 +1469,4 @@ myApp.onPageInit('walkthrough', function(page) {
 	});
 
 });
+
