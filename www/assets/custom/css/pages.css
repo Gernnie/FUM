@@ -303,7 +303,7 @@
 
 .page[data-page=cart] .page-content {
 	height: calc(100% - 48px);
-  padding-top: 56px !important;
+    padding-top: 60px !important;
 }
 
 .page[data-page=cart] .products-list .item-media img {
@@ -1761,7 +1761,7 @@
 }
 
 .navbar-transparent ~ .page-content {
-	padding-top: 25px !important;
+	padding-top: 60px !important;
 }
 
 .list-block .item-inner {
@@ -2144,4 +2144,8 @@
 
 .page[data-page=walkthrough] .walkthrough-pagination {
 	bottom: 80px;
+}
+
+.swipeout .item-title{
+	color: #212121;
 }

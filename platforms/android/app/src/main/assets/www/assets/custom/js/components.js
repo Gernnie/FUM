@@ -271,6 +271,18 @@ myApp.onPageInit('form-validation', function(page) {
 |------------------------------------------------------------------------------
 */
 
+myApp.onPageInit('home', function(page) {
+	
+	$('.page[data-page=home] input[name=geocomplete-search]').geocomplete({
+		map: '#map',
+		details: '.geocomplete-details',
+		detailsAttribute: 'data-geo'
+	})
+	
+	$('.page[data-page=home] input[name=geocomplete-search]').geocomplete('find', 'Toronto, Canada');
+
+});
+
 myApp.onPageInit('geocomplete', function(page) {
 	
 	$('.page[data-page=geocomplete] input[name=geocomplete-search]').geocomplete({

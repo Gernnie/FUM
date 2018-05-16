@@ -826,7 +826,7 @@ html:not(.watch-active-state) .button.button-fill[class^='bg']:active.button-vk,
 
 .content-block-title {
 	color: rgba(0, 0, 0, 0.84);
-	line-height: 18px;
+	line-height: 22px;
 	overflow: auto;
 	white-space: normal;
 }
@@ -1133,7 +1133,7 @@ html:not(.watch-active-state) .button.button-fill[class^='bg']:active.button-vk,
 
 .navbar-fixed .navbar,
 .navbar-through .navbar {
-	box-shadow: none;
+	/*box-shadow: none;*/
 }
 
 .navbar-transparent {
