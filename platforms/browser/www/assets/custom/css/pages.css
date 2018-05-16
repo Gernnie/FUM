@@ -379,12 +379,12 @@
 }
 
 .page[data-page=chat] .message-sent .message-text {
-	background-color: #F39C12;
+	background-color: #976DD0;
 	color: #FFFFFF;
 }
 
 .page[data-page=chat] .message-sent .message-text:before {
-	border-bottom-color: #F39C12;
+	border-bottom-color: #976DD0;
 }
 
 .page[data-page=chat] .message-received .message-text {
