@@ -763,16 +763,36 @@ myApp.onPageInit('login', function(page) {
 			error.appendTo(element.parent().siblings('.input-error'));
 		},
 		submitHandler: function(form) {
-			myApp.addNotification({
-        message: 'Welcome',
-				hold: 1500,
-				button: {
-					text: ''
-				}
+			var data = {
+			  "tenancyName": "",
+			  "usernameOrEmailAddress": $('[name="email"]').val(),
+			  "password": $('[name="password"]').val()
+			}
+			api.callApi('account', form.method, data).done(function(result){
+				api.authToken = result.result;
+				var data = '';
+
+				// EXAMPLE AUTHORIZED API CALL
+				api.callApi('services/app/session/GetCurrentLoginInformations', 'post', data).done(function(result){
+					console.log(result);
+				});
+
+
+
+				myApp.addNotification({
+	        	message: 'Welcome',
+					hold: 1500,
+					button: {
+						text: ''
+					}
+				});
+				mainView.router.load({
+					url: 'home.html'
+				});
+			}).fail(function(response){
+				$('.global-error').html(response.responseJSON.error.details);
 			});
-			mainView.router.load({
-				url: 'home.html'
-			});
+			
 		}
 	});
 
