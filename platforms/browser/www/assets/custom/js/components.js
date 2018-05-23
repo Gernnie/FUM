@@ -265,6 +265,53 @@ myApp.onPageInit('form-validation', function(page) {
 
 });
 
+myApp.onPageInit('create-project', function(page) {
+
+	$('.page[data-page=create-project] form[name=validation]').validate({
+		rules: {
+			project_name: {
+				required: true
+			},
+			name: {
+				required: true
+			},
+			age: {
+				required: true,
+				range: [1, 100]
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			url: {
+				required: true,
+				url: true
+			},
+			number: {
+				required: true,
+				number: true
+			},
+			description: {
+				required: true
+			}
+		},
+    errorElement : 'div',
+		errorPlacement: function(error, element) {
+			error.appendTo(element.parent().siblings('.input-error'));
+		},
+		submitHandler: function(form) {
+			myApp.addNotification({
+				message: 'Project Created',
+				hold: 1500,
+				button: {
+					text: ''
+				}
+			});
+		}
+	});
+
+});
+
 /*
 |------------------------------------------------------------------------------
 | Geocomplete
@@ -280,6 +327,17 @@ myApp.onPageInit('home', function(page) {
 	})
 	
 	$('.page[data-page=home] input[name=geocomplete-search]').geocomplete('find', 'Toronto, Canada');
+});
+
+myApp.onPageInit('my-jobs', function(page) {
+
+	$('.page[data-page=my-jobs] input[name=geocomplete-search]').geocomplete({
+		map: '#job-map',
+		details: '.geocomplete-details',
+		detailsAttribute: 'data-geo'
+	})
+	
+	$('.page[data-page=my-jobs] input[name=geocomplete-search]').geocomplete('find', 'Toronto, Canada');
 });
 
 myApp.onPageInit('geocomplete', function(page) {

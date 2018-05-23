@@ -27,7 +27,27 @@
 
 		<!-- Begin: Features Section -->
 		<div class="section-features">
-        <div class="content-block-title">Job Map</div>
+        <div class="content-block-title">Project Map <a href="pages/create-project.html" type="button" class="button button-fill button-raised home-create">Create Project</a></div>
+        
+        <div class="clear"></div>
+        <div class="list-block">
+			<ul>
+				<li>
+					<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true" >
+						<select name="project" multiple>
+							<option value="available">Available Projects</option>
+							<option value="looking">Looking For Projects</option>
+							<option value="manage">Manage Projects</option>
+						</select>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title">Project Filters</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
         <div class="map-wrapper embed">
 			<div id="map" class="map embed-content"></div>
 		</div>

@@ -2160,8 +2160,13 @@
     color: #fff!important;
     background-color: #212121;
     left: 0;
+    font-size: 21px;
 }
 
 .account .panel-header {
 	text-align: center;
+}
+
+.home-create {
+	float: right;
 }
