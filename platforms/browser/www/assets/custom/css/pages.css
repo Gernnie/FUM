@@ -2161,3 +2161,7 @@
     background-color: #212121;
     left: 0;
 }
+
+.account .panel-header {
+	text-align: center;
+}
