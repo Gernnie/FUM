@@ -13,7 +13,7 @@ window.myApp = new Framework7({
 	cache: false,
 	init: false,
 	material: true,
-	modalTitle: 'Nectar',
+	modalTitle: 'FUM Time',
 	notificationCloseButtonText: 'OK',
 	scrollTopOnNavbarClick: true
 });

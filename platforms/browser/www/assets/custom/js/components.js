@@ -573,6 +573,15 @@ myApp.onPageInit('modals', function(page) {
     });
 	});
 
+	$$('#modal-nested').on('click', function(e) {
+		e.preventDefault();
+		myApp.prompt('Additional Notes?', function(value) {
+			myApp.confirm('Are you sure that your name is ' + value + '?', function() {
+				myApp.alert('OK, Your name is ' + value + '.');
+      });
+    });
+	});
+
 	/* Modal with 3 Buttons */
 	$$('.page[data-page=modals] #modal-custom-3-buttons').on('click', function(e) {
 		e.preventDefault();
@@ -711,6 +720,13 @@ myApp.onPageInit('photo-browser', function(page) {
 			type: 'popup'
 		});
 		myPhotoBrowserDarkPopup.open();
+	});
+
+	$$('#modal-nested').on('click', function(e) {
+		e.preventDefault();
+		myApp.prompt('Additional Notes?', function(value) {
+			myApp.alert('Your application has been submitted!');
+    	});
 	});
 
 });

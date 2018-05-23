@@ -2149,3 +2149,15 @@
 .swipeout .item-title{
 	color: #212121;
 }
+
+.btn-apply{
+    position: fixed;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: #fff!important;
+    background-color: #212121;
+    left: 0;
+}
