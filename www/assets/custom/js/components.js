@@ -1430,3 +1430,14 @@ myApp.onPageInit('virtual-list', function(page) {
 	});
 
 });
+
+myApp.onPageInit('my-projects', function(page) {
+
+	$$('#modal-nested').on('click', function(e) {
+		e.preventDefault();
+		myApp.prompt('Additional Notes?', function(value) {
+			myApp.alert('This project has been completed!');
+    	});
+	});
+
+});
