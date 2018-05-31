@@ -1,0 +1,165 @@
+<div data-page="checkout" class="page toolbar-fixed">
+	<!-- Begin: Navbar -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="link icon-only back">
+					<i class="icon icon-back"></i>
+				</a>
+			</div>
+			<div class="center">Checkout</div>
+			<div class="right">
+				<a href="cart.html" class="link icon-only" title="Cart">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- End: Navbar -->
+
+	<!-- Begin: Toolbar -->
+	<div class="toolbar tabbar tabbar-scrollable">
+		<div class="toolbar-inner">
+			<a href="#tab-payment" class="tab-link">Payment</a>
+			<a href="#tab-done" class="tab-link">Done</a>
+		</div>
+	</div>
+	<!-- End: Toolbar -->
+
+	<!-- Begin: Page Content -->
+  <div class="page-content">
+
+		<div class="tabs">
+			<div id="tab-payment" class="tab active">
+				<div class="content-block-title">Choose your payment method</div>
+				<form name="payment" action="#" method="POST" enctype="multipart/form-data">
+					<div class="list-block no-hairlines no-hairlines-between">
+						<ul>
+							<li>
+								<label class="label-radio item-content">
+									<input type="radio" name="payment_method" value="cash" />
+									<span class="item-media">
+										<i class="icon icon-form-radio"></i>
+									</span>
+									<span class="item-inner">
+										<span class="item-title">Cash on Delivery</span>
+										<span class="item-after">
+											<i class="fa fa-fw fa-lg fa-money color-green"></i>
+										</span>
+									</span>
+								</label>
+							</li>
+							<li>
+								<label class="label-radio item-content">
+									<input type="radio" name="payment_method" value="card" />
+									<span class="item-media">
+										<i class="icon icon-form-radio"></i>
+									</span>
+									<span class="item-inner">
+										<span class="item-title">Credit/Debit Card</span>
+										<span class="item-after">
+											<i class="fa fa-fw fa-lg fa-credit-card-alt color-gray"></i>
+										</span>
+									</span>
+								</label>
+							</li>
+							<li>
+								<label class="label-radio item-content">
+									<input type="radio" name="payment_method" value="bitcoin" />
+									<span class="item-media">
+										<i class="icon icon-form-radio"></i>
+									</span>
+									<span class="item-inner">
+										<span class="item-title">Bitcoin</span>
+										<span class="item-after">
+											<i class="fa fa-fw fa-lg fa-bitcoin color-bitcoin"></i>
+										</span>
+									</span>
+								</label>
+							</li>
+							<li>
+								<label class="label-radio item-content">
+									<input type="radio" name="payment_method" value="paypal" />
+									<span class="item-media">
+										<i class="icon icon-form-radio"></i>
+									</span>
+									<span class="item-inner">
+										<span class="item-title">PayPal</span>
+										<span class="item-after">
+											<i class="fa fa-fw fa-lg fa-paypal color-paypal"></i>
+										</span>
+									</span>
+								</label>
+							</li>
+							<li>
+								<label class="label-radio item-content">
+									<input type="radio" name="payment_method" value="google_wallet" />
+									<span class="item-media">
+										<i class="icon icon-form-radio"></i>
+									</span>
+									<span class="item-inner">
+										<span class="item-title">Google Wallet</span>
+										<span class="item-after">
+											<i class="fa fa-fw fa-lg fa-google-wallet color-google"></i>
+										</span>
+									</span>
+								</label>
+							</li>
+							<li>
+								<label class="label-radio item-content">
+									<input type="radio" name="payment_method" value="apple_pay" />
+									<span class="item-media">
+										<i class="icon icon-form-radio"></i>
+									</span>
+									<span class="item-inner">
+										<span class="item-title">Apple Pay</span>
+										<span class="item-after">
+											<i class="fa fa-fw fa-lg fa-apple color-apple"></i>
+										</span>
+									</span>
+								</label>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-text input-error"></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="content-block">
+						<button type="submit" class="button button-big button-block button-fill" data-action="show-tab-done">Pay</button>
+					</div>
+				</form>
+			</div>
+
+			<div id="tab-done" class="tab">
+				<div class="container">
+					<i class="fa-5x fa-stack">
+						<span class="fa fa-circle fa-stack-2x color-lightgreen"></span>
+						<span class="fa fa-check fa-stack-1x fa-inverse color-white"></span>
+					</i>
+					<div>Your order has been received successfully.</div>
+				</div>
+			</div>
+		</div>	
+              <!-- Begin: Speed Dial -->
+        <div class="speed-dial">
+            <a href="#" class="floating-button">
+                <i class="material-icons">add</i>
+                <i class="material-icons">clear</i>
+            </a>
+            <div class="speed-dial-buttons">
+                <a href="pages/messenger-list.html" class="bg-blue" title="Comment">
+                    <i class="material-icons">mode_comment</i>
+                </a>
+                <a href="pages\create-project.html" class="bg-lightgreen" title="Add">
+                    <i class="material-icons">add_box</i>
+                </a>
+            </div>
+        </div>
+        <!-- End: Speed Dial -->
+	</div>
+	<!-- End: Page Content -->	
+</div>

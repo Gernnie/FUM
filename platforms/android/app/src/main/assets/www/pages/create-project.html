@@ -20,73 +20,65 @@
 		</div>
 
 		<form name="validation" action="#" method="POST" enctype="multipart/form-data">
-			<div class="list-block no-hairlines">
+		<div class="content-block-title">PROJECT DETAILS</div>
+			<div class="list-block">
 				<ul>
-				<li>
-						<div class="item-content">
-							<div class="item-media">
-								<i class="material-icons">assignment</i>
-							</div>
-							<div class="item-inner">
-								<div class="item-input">
-									<input type="text" name="project_name" placeholder="Project Name" required />
-								</div>
-								<div class="item-text input-error"></div>
-							</div>
-						</div>
-					</li>
 					<li>
 						<div class="item-content">
 							<div class="item-media">
 								<i class="material-icons">person_outline</i>
 							</div>
 							<div class="item-inner">
+								<div class="item-title label">Project Name</div>
 								<div class="item-input">
-									<input type="text" name="name" placeholder="Name" required />
+									<input type="text" />
 								</div>
-								<div class="item-text input-error"></div>
 							</div>
 						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="list-block">
+				<ul>
+					<li>
+						<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true">
+							<select name="role">
+								<option value="employer">Employer</option>
+								<option value="manager">Manager</option>
+								<option value="worker">Worker</option>
+							</select>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">Role</div>
+								</div>
+							</div>
+						</a>
 					</li>
 					<li>
-						<div class="item-content">
-							<div class="item-media">
-								<i class="material-icons">mail_outline</i>
-							</div>
-							<div class="item-inner">
-								<div class="item-input">
-									<input type="email" name="email" placeholder="Email" required />
+						<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true">
+							<select name="role">
+								<optgroup label="Immediate Task">
+									<option value="employer">Delivery</option>
+									<option value="manager">Pick Up</option>
+									<option value="worker">Temporary Worker</option>
+								</optgroup>
+								<optgroup label="Home Service">
+									<option value="employer">Cleaning &amp; Moving</option>
+									<option value="manager">Fixing &amp; Building</option>
+									<option value="worker">Personal Caring</option>
+								</optgroup>
+							</select>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">Type Of Job</div>
 								</div>
-								<div class="item-text input-error"></div>
 							</div>
-						</div>
+						</a>
 					</li>
-					<li>
-						<div class="item-content">
-							<div class="item-media">
-								<i class="material-icons">language</i>
-							</div>
-							<div class="item-inner">
-								<div class="item-input">
-									<input type="url" name="url" placeholder="URL" required />
-								</div>
-								<div class="item-text input-error"></div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-content">
-							<div class="item-media">
-								<i class="material-icons">looks_one</i>
-							</div>
-							<div class="item-inner">
-								<div class="item-input">
-									<input type="number" name="number" placeholder="Number" required />
-								</div>
-								<div class="item-text input-error"></div>
-							</div>
-						</div>
-					</li>
+				</ul>
+			</div>
+			<div class="list-block">
+				<ul>
 					<li class="align-top">
 						<div class="item-content">
 							<div class="item-media">
@@ -99,8 +91,30 @@
 							</div>
 						</div>
 					</li>
+					<li>
+						<a href="#" class="button">Attach File</a>
+					</li>
 				</ul>
 			</div>
+
+			<div class="content-block-title">PROJECT FINANCIALS</div>
+			<div class="list-block">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Manager Percentage</div>
+								<div class="item-input">
+									<div class="range-slider">
+										<input type="range" min="0" max="100" step="1" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
 			<div class="content-block">
 				<button type="submit" class="button button-big button-block button-fill">Create Project</button>
 			</div>

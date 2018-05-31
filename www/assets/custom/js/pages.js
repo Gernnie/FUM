@@ -763,7 +763,19 @@ myApp.onPageInit('login', function(page) {
 			error.appendTo(element.parent().siblings('.input-error'));
 		},
 		submitHandler: function(form) {
-			var data = {
+
+			myApp.addNotification({
+	        	message: 'Welcome',
+					hold: 1500,
+					button: {
+						text: ''
+					}
+				});
+			mainView.router.load({
+					url: 'home.html'
+			});
+
+			/*var data = {
 			  "tenancyName": "",
 			  "usernameOrEmailAddress": $('[name="email"]').val(),
 			  "password": $('[name="password"]').val()
@@ -778,7 +790,6 @@ myApp.onPageInit('login', function(page) {
 				});
 
 
-
 				myApp.addNotification({
 	        	message: 'Welcome',
 					hold: 1500,
@@ -791,7 +802,7 @@ myApp.onPageInit('login', function(page) {
 				});
 			}).fail(function(response){
 				$('.global-error').html(response.responseJSON.error.details);
-			});
+			});*/
 			
 		}
 	});
