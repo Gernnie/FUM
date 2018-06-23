@@ -1289,7 +1289,7 @@ myApp.onPageInit('signup', function(page) {
 	});
 
 	/* Validate & Submit Form */
-	$('.popup-signup-email form[name=signup-email]').validate({
+	$('form[name=signup-email]').validate({
 		rules: {
 			name: {
 				required: true
@@ -1322,21 +1322,161 @@ myApp.onPageInit('signup', function(page) {
 			error.appendTo(element.parent().siblings('.input-error'));
 		},
 		submitHandler: function(form) {
-			myApp.closeModal('.popup-signup-email');
-			myApp.addNotification({
-        message: 'Thank you for signing up with us.',
-				hold: 2000,
-				button: {
-					text: ''
-				}
+
+			var data = {
+			  "user": {
+			    "name": $("input[name='first_name']").val(),
+			    "surname": $("input[name='last_name']").val(),
+			    "userName": $("input[name='email']").val(),
+			    "emailAddress": $("input[name='email']").val(),
+			    "phoneNumber": $("input[name='email']").val(),
+			    "password": "mobile",
+			    "isActive": true,
+			    "shouldChangePasswordOnNextLogin": true,
+			    "isTwoFactorEnabled": false,
+			    "isLockoutEnabled": true,
+			    "dateOfBirth": "2018-06-20T14:01:29.013Z",
+			    "role": 1,
+			    "hasAgreedToTerms": true,
+			    "isLookingForWork": true,
+			    "isWorkInATeam": true,
+			    "jobs": "string",
+			    "skills": "string",
+			    "experience": "string",
+			    "portfolio": "string"
+			  },
+			  "assignedRoleNames": [
+			    "string"
+			  ],
+			  "sendActivationEmail": true,
+			  "setRandomPassword": true
+			};
+
+			api.callApi('services/app/user/CreateOrUpdateUser', 'post', data).done(function(result){
+				console.log(result);
+				myApp.closeModal('.popup-signup-email');
+				myApp.addNotification({
+	        	message: 'Thank you for signing up with us.',
+					hold: 2000,
+					button: {
+						text: ''
+					}
+				});
+				mainView.router.load({
+					url: 'login.html'
+				});
 			});
-			mainView.router.load({
-				url: 'login.html'
-			});
+
+
+
+			
 		}
 	});
 
 });	
+
+myApp.onPageInit('signup-email', function(page) {
+
+	/* Show|Hide Password */ 
+	$$('.signup-email [data-action=show-hide-password]').on('click', function() {
+		if ($$('.signup-email input[data-toggle=show-hide-password]').attr('type') === 'password') {
+			$$('.signup-email input[data-toggle=show-hide-password]').attr('type', 'text');
+			$$(this).attr('title', 'Hide');
+			$$(this).children('i').text('visibility_off');
+		}
+		else {
+			$$('.signup-email input[data-toggle=show-hide-password]').attr('type', 'password');
+			$$(this).attr('title', 'Show');
+			$$(this).children('i').text('visibility');
+		}
+	});
+
+	/* Validate & Submit Form */
+	$('form[name=signup-email]').validate({
+		rules: {
+			name: {
+				required: true
+			},
+			email: {
+				required: true,
+        email:true
+      },
+      password: {
+				required: true,
+				minlength: 8
+			}
+		},
+    messages: {
+			name: {
+				required: 'Please enter name.'
+			},
+			email: {
+				required: 'Please enter email address.',
+        email: 'Please enter a valid email address.'
+      },
+			password: {
+				required: 'Please enter password.',
+				minlength: 'Password must be at least 8 characters long.'
+      }
+		},
+		onkeyup: false,
+    errorElement : 'div',
+		errorPlacement: function(error, element) {
+			error.appendTo(element.parent().siblings('.input-error'));
+		},
+		submitHandler: function(form) {
+
+			var data = {
+			  "user": {
+			    "name": $("input[name='first_name']").val(),
+			    "surname": $("input[name='last_name']").val(),
+			    "userName": $("input[name='email']").val(),
+			    "emailAddress": $("input[name='email']").val(),
+			    "phoneNumber": $("input[name='email']").val(),
+			    "password": $("input[name='password']").val(),
+			    "isActive": true,
+			    "shouldChangePasswordOnNextLogin": true,
+			    "isTwoFactorEnabled": false,
+			    "isLockoutEnabled": true,
+			    "dateOfBirth": "2018-06-20T14:01:29.013Z",
+			    "role": 1,
+			    "hasAgreedToTerms": true,
+			    "isLookingForWork": true,
+			    "isWorkInATeam": true,
+			    "jobs": "string",
+			    "skills": "string",
+			    "experience": "string",
+			    "portfolio": "string"
+			  },
+			  "assignedRoleNames": [
+			    "string"
+			  ],
+			  "sendActivationEmail": true,
+			  "setRandomPassword": true
+			};
+
+			api.callApi('services/app/user/CreateOrUpdateUser', 'post', data).done(function(result){
+				console.log(result);
+				myApp.closeModal('.popup-signup-email');
+				myApp.addNotification({
+	        	message: 'Thank you for signing up with us.',
+					hold: 2000,
+					button: {
+						text: ''
+					}
+				});
+				mainView.router.load({
+					url: 'login.html'
+				});
+			});
+
+
+
+			
+		}
+	});
+
+});
 
 /*
 |------------------------------------------------------------------------------

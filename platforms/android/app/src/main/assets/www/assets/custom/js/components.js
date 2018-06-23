@@ -248,6 +248,48 @@ myApp.onPageInit('create-project', function(page) {
 
 });
 
+myApp.onPageInit('signup', function(page) {
+
+	/* Basic Calendar */
+	var calendarBasic = myApp.calendar({
+    input: '.page[data-page=signup] #calendar-basic'
+	});
+
+	/* Calendar with Custom Date Format */
+	var calendarCustomDateFormat = myApp.calendar({
+    dateFormat: 'DD, MM dd, yyyy',
+		input: '.page[data-page=signup] #calendar-custom-date-format'
+	});
+
+	/* Calendar with Multiple Dates */
+	var calendarMultipleDates = myApp.calendar({
+    dateFormat: 'M dd, yyyy',
+		input: '.page[data-page=signup] #calendar-multiple-dates',
+    multiple: true
+	});
+
+	/* Calendar with Date Range */
+	var calendarDateRange = myApp.calendar({
+    dateFormat: 'dd MM yyyy',
+		input: '.page[data-page=signup] #calendar-date-range',
+    rangePicker: true
+	});
+
+	/* Calendar with Disabled Dates */
+	var dateToday = new Date();
+	var dateWeekLater = new Date().setDate(dateToday.getDate() + 7);
+
+	var calendarDisabledDates = myApp.calendar({
+    dateFormat: 'MM dd, yyyy',
+    disabled: {
+      from: dateToday,
+      to: dateWeekLater
+    },
+		input: '.page[data-page=signup] #calendar-disabled-dates'
+	});
+
+});
+
 /*
 |------------------------------------------------------------------------------
 | Form Validation
