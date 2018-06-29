@@ -25,84 +25,149 @@
 	<!-- Begin: Page Content -->
   <div class="page-content">
 
-		<!-- Begin: Features Section -->
-		<div class="section-features">
-        <div class="content-block-title">Project Map</div>
+  		<div class="toolbar tabbar tabbar-scrollable tabbar-inline">
+			<div class="toolbar-inner">
+				<a href="#tab-project-map" class="tab-link active">Project Map</a>
+				<a href="#tab-project-list" class="tab-link">Project List</a>
+			<span class="tab-link-highlight" style="width: 107px; transform: translate3d(0px, 0px, 0px);"></span></div>
+		</div>
         
-        <div class="clear"></div>
-        <div class="list-block">
-			<ul>
-				<li>
-					<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true" >
-						<select name="project" multiple>
-							<option value="available">Available Projects</option>
-							<option value="looking">Looking For Projects</option>
-							<option value="manage">Manage Projects</option>
-						</select>
-						<div class="item-content">
-							<div class="item-inner">
-								<div class="item-title">Project Filters</div>
+		<div class="tabs">
+			<div id="tab-project-map" class="tab active">
+		        <div class="list-block">
+					<ul>
+						<li>
+							<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true" >
+								<select name="project" multiple>
+									<option value="available">Available Projects</option>
+									<option value="looking">Looking For Projects</option>
+									<option value="manage">Manage Projects</option>
+								</select>
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">Project Filters</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+		        <div class="map-wrapper embed">
+					<div id="map" class="map embed-content"></div>
+				</div>
+			
+				<div class="list-block no-hairlines">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">Search</div>
+									<div class="item-input">
+										<input type="text" name="geocomplete-search" />
+									</div>
+								</div>
 							</div>
-						</div>
-					</a>
-				</li>
-			</ul>
-		</div>
-        <div class="map-wrapper embed">
-			<div id="map" class="map embed-content"></div>
-		</div>
-	
-		<div class="list-block no-hairlines">
-			<ul>
-				<li>
-					<div class="item-content">
-						<div class="item-inner">
-							<div class="item-title label">Search</div>
-							<div class="item-input">
-								<input type="text" name="geocomplete-search" />
+						</li>
+					</ul>
+				</div>
+				
+				<div class="list-block geocomplete-details">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">City</div>
+									<div class="item-after" data-geo="locality"></div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		
-		<div class="list-block geocomplete-details">
-			<ul>
-				<li>
-					<div class="item-content">
-						<div class="item-inner">
-							<div class="item-title">City</div>
-							<div class="item-after" data-geo="locality"></div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="item-content">
-						<div class="item-inner">
-							<div class="item-title">State/Province</div>
-							<div class="item-after" data-geo="administrative_area_level_1"></div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="item-content">
-						<div class="item-inner">
-							<div class="item-title">Country</div>
-							<div class="item-after" data-geo="country"></div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="item-content">
-						<div class="item-inner">
-							<div class="item-title">Postal Code</div>
-							<div class="item-after" data-geo="postal_code"></div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">State/Province</div>
+									<div class="item-after" data-geo="administrative_area_level_1"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">Country</div>
+									<div class="item-after" data-geo="country"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">Postal Code</div>
+									<div class="item-after" data-geo="postal_code"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="tab-project-list" class="tab">
+				<div class="list-block">
+				<ul>
+						<li>
+							<a href="pages/demo-job-categories/websites.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">Websites, IT &amp; Software</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/demo-job-categories/writing.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">Writing &amp; Content</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/demo-job-categories/design.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">Design, Media &amp; Architecture</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/demo-job-categories/data.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">Data Entry &amp; Admin</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/demo-job-categories/engineering.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">Engineering &amp; Science</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/demo-job-categories/sales.html" class="item-link">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title">Sales &amp; Marketing</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<!-- End: Features Section -->
         <!-- Begin: Speed Dial -->

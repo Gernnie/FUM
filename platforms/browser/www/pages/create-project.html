@@ -17,18 +17,18 @@
 
   	<div class="toolbar tabbar tabbar-scrollable tabbar-inline">
 		<div class="toolbar-inner">
-			<a href="#tab-details" class="tab-link active">1. Details</a>
-			<a href="#tab-management" class="tab-link">2. Management</a>
-			<a href="#tab-financials" class="tab-link">3. Financials</a>
-
+			<a href="#tab-step1" class="tab-link active">Step 1</a>
+			<a href="#tab-step2" class="tab-link">Step 2</a>
+			<a href="#tab-step3" class="tab-link">Almost There!</a>
+			<a href="#tab-summary" class="tab-link">Summary</a>
 		<span class="tab-link-highlight" style="width: 107px; transform: translate3d(0px, 0px, 0px);"></span></div>
 	</div>
 
 	<div class="tabs">
-		<div id="tab-details" class="tab active">
+		<div id="tab-step1" class="tab active">
 		<form name="validation" action="#" method="POST" enctype="multipart/form-data">
-		<div class="content-block-title">PROJECT DETAILS</div>
-			<div class="list-block">
+		<div class="content-block-title">Step 1</div>
+			<div class="list-block no-hairlines">
 				<ul>
 					<li>
 						<div class="item-content">
@@ -45,7 +45,29 @@
 					</li>
 				</ul>
 			</div>
-			<div class="list-block">
+			<div class="list-block no-hairlines">
+				<ul>
+					<li class="align-top">
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons">zoom_out_map</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-input">
+									<textarea class="description" name="description" placeholder="Project Description" required></textarea>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- <li>
+						<a href="#" class="button">Attach File</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		<div id="tab-step2" class="tab">
+			<div class="content-block-title">Step 2</div>
+			<div class="list-block no-hairlines no-hairlines-between">
 				<ul>
 					<li>
 						<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true">
@@ -61,6 +83,10 @@
 							</div>
 						</a>
 					</li>
+				</ul>
+			</div>
+			<div class="list-block no-hairlines no-hairlines-between">
+				<ul>
 					<li>
 						<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true">
 							<select name="role">
@@ -84,29 +110,47 @@
 					</li>
 				</ul>
 			</div>
-			<div class="list-block">
+			<div class="list-block no-hairlines no-hairlines-between">
 				<ul>
-					<li class="align-top">
-						<div class="item-content">
-							<div class="item-media">
-								<i class="material-icons">zoom_out_map</i>
-							</div>
-							<div class="item-inner">
-								<div class="item-input">
-									<textarea class="description" name="description" placeholder="Project Description" required></textarea>
+					<li>
+						<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true">
+							<select name="role">
+								<option value="small">0-3</option>
+								<option value="med">4-10</option>
+								<option value="large">10-20</option>
+							</select>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">Ideal Team Size</div>
 								</div>
 							</div>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="button">Attach File</a>
+						</a>
 					</li>
 				</ul>
+				<div class="list-block no-hairlines no-hairlines-between">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="material-icons">supervisor_account</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Does this job require a supervisor/manager?</div>
+									<div class="item-after">
+										<label class="label-switch">
+											<input type="checkbox" checked />
+											<span class="checkbox"></span>
+										</label>
+									</div>
+								</div>
+							</div>	
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div id="tab-management" class="tab">
-			<div class="content-block-title">PROJECT MANAGEMENT</div>
-			<div class="list-block no-hairlines no-hairlines-between">
+			</div>
+
+			<!-- <div class="list-block no-hairlines no-hairlines-between">
 				<ul>
 					<li>
 						<div class="item-content">
@@ -134,33 +178,105 @@
 				</ul>
 			</div>
 			<div class="list-block no-hairlines no-hairlines-between">
-					<ul>
-						<li>
-							<div class="item-content">
-								<div class="item-media">
-									<span class="fa-stack">
-										<span class="fa fa-circle fa-stack-2x color-orange"></span>
-										<span class="fa fa-bell fa-stack-1x fa-inverse"></span>
-									</span>
-								</div>
-								<div class="item-inner">
-									<div class="item-title">Onsite</div>
-									<div class="item-after">
-										<label class="label-switch">
-											<input type="checkbox" checked />
-											<span class="checkbox"></span>
-										</label>
-									</div>
-								</div>
-							</div>	
-						</li>
-					</ul>
-				</div>
-		</div>
-		<div id="tab-financials" class="tab">
-		<div class="content-block-title">PROJECT FINANCIALS</div>
-			<div class="list-block">
 				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-media">
+								<span class="fa-stack">
+									<span class="fa fa-circle fa-stack-2x color-orange"></span>
+									<span class="fa fa-bell fa-stack-1x fa-inverse"></span>
+								</span>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Onsite</div>
+								<div class="item-after">
+									<label class="label-switch">
+										<input type="checkbox" checked />
+										<span class="checkbox"></span>
+									</label>
+								</div>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</div>
+		</div> -->
+		<div id="tab-step3" class="tab">
+		<div class="content-block-title">Almost There!</div>
+			<div class="list-block no-hairlines no-hairlines-between">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons">date_range</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-input">
+									<input type="text" id="calendar-basic" name="start_date" placeholder="Start Date (Tentative)" readonly required />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="list-block no-hairlines no-hairlines-between">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-media">
+								<i class="material-icons">transfer_within_a_station</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Onsite - Physical Presence Required</div>
+								<div class="item-after">
+									<label class="label-switch">
+										<input type="checkbox" checked />
+										<span class="checkbox"></span>
+									</label>
+								</div>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</div>
+			<div class="list-block no-hairlines no-hairlines-between">
+				<ul>
+					<li>
+						<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true">
+							<select name="role">
+								<option value="hourly">Per Hour Basis</option>
+								<option value="fixed">Fixed Price</option>
+							</select>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">Payment?</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="list-block no-hairlines no-hairlines-between">
+				<ul>
+					<li>
+						<a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true">
+							<select name="role">
+								<option value="10">$10/hr</option>
+								<option value="20">$20/hr</option>
+								<option value="30">$30/hr</option>
+							</select>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title">How much do you want to pay?</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+				<!-- <ul>
 					<li>
 						<div class="item-content">
 							<div class="item-inner">
@@ -173,8 +289,11 @@
 							</div>
 						</div>
 					</li>
-				</ul>
-			</div>
+				</ul> -->
+			<!-- </div> -->
+		</div>
+		<div id="tab-summary" class="tab">
+		<div class="content-block-title">Summary</div>
 			<div class="content-block">
 				<button type="submit" class="button button-big button-block button-fill">Create Project</button>
 			</div>

@@ -764,7 +764,7 @@ myApp.onPageInit('login', function(page) {
 		},
 		submitHandler: function(form) {
 
-			myApp.addNotification({
+			/*myApp.addNotification({
 	        	message: 'Welcome',
 					hold: 1500,
 					button: {
@@ -773,9 +773,9 @@ myApp.onPageInit('login', function(page) {
 				});
 			mainView.router.load({
 					url: 'home.html'
-			});
+			});*/
 
-			/*var data = {
+			var data = {
 			  "tenancyName": "",
 			  "usernameOrEmailAddress": $('[name="email"]').val(),
 			  "password": $('[name="password"]').val()
@@ -802,7 +802,7 @@ myApp.onPageInit('login', function(page) {
 				});
 			}).fail(function(response){
 				$('.global-error').html(response.responseJSON.error.details);
-			});*/
+			});
 			
 		}
 	});
@@ -1326,30 +1326,19 @@ myApp.onPageInit('signup', function(page) {
 			var data = {
 			  "user": {
 			    "name": $("input[name='first_name']").val(),
-			    "surname": $("input[name='last_name']").val(),
-			    "userName": $("input[name='email']").val(),
-			    "emailAddress": $("input[name='email']").val(),
-			    "phoneNumber": $("input[name='email']").val(),
-			    "password": "mobile",
-			    "isActive": true,
-			    "shouldChangePasswordOnNextLogin": true,
-			    "isTwoFactorEnabled": false,
-			    "isLockoutEnabled": true,
-			    "dateOfBirth": "2018-06-20T14:01:29.013Z",
-			    "role": 1,
-			    "hasAgreedToTerms": true,
-			    "isLookingForWork": true,
-			    "isWorkInATeam": true,
-			    "jobs": "string",
-			    "skills": "string",
-			    "experience": "string",
-			    "portfolio": "string"
-			  },
-			  "assignedRoleNames": [
-			    "string"
-			  ],
-			  "sendActivationEmail": true,
-			  "setRandomPassword": true
+				"surname": $("input[name='last_name']").val(),
+				"userName": $("input[name='email']").val(),
+				"emailAddress": $("input[name='email']").val(),
+				"phoneNumber": $("input[name='mobile']").val(),
+				"password": "string",
+				"isExternalLogin": false,
+				"returnUrl": "",
+				"dateOfBirth": "2018-06-24T22:14:46.341Z",
+				"role": 1,
+				"hasAgreedToTerms": true,
+				"isLookingForWork": true,
+				"isWorkInATeam": true
+				}
 			};
 
 			api.callApi('services/app/user/CreateOrUpdateUser', 'post', data).done(function(result){
@@ -1427,35 +1416,22 @@ myApp.onPageInit('signup-email', function(page) {
 		submitHandler: function(form) {
 
 			var data = {
-			  "user": {
 			    "name": $("input[name='first_name']").val(),
-			    "surname": $("input[name='last_name']").val(),
-			    "userName": $("input[name='email']").val(),
-			    "emailAddress": $("input[name='email']").val(),
-			    "phoneNumber": $("input[name='email']").val(),
-			    "password": $("input[name='password']").val(),
-			    "isActive": true,
-			    "shouldChangePasswordOnNextLogin": true,
-			    "isTwoFactorEnabled": false,
-			    "isLockoutEnabled": true,
-			    "dateOfBirth": "2018-06-20T14:01:29.013Z",
-			    "role": 1,
-			    "hasAgreedToTerms": true,
-			    "isLookingForWork": true,
-			    "isWorkInATeam": true,
-			    "jobs": "string",
-			    "skills": "string",
-			    "experience": "string",
-			    "portfolio": "string"
-			  },
-			  "assignedRoleNames": [
-			    "string"
-			  ],
-			  "sendActivationEmail": true,
-			  "setRandomPassword": true
+				"surname": $("input[name='last_name']").val(),
+				"userName": $("input[name='email']").val(),
+				"emailAddress": $("input[name='email']").val(),
+				"phoneNumber": $("input[name='mobile']").val(),
+				"password": $("input[name='password']").val(),
+				"isExternalLogin": false,
+				"returnUrl": "",
+				"dateOfBirth": "2018-06-24T22:14:46.341Z",
+				"role": 1,
+				"hasAgreedToTerms": true,
+				"isLookingForWork": true,
+				"isWorkInATeam": true
 			};
 
-			api.callApi('services/app/user/CreateOrUpdateUser', 'post', data).done(function(result){
+			api.callApi('register', 'post', data).done(function(result){
 				console.log(result);
 				myApp.closeModal('.popup-signup-email');
 				myApp.addNotification({

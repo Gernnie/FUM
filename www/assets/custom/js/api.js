@@ -8,13 +8,16 @@ var api = {
 			return $.ajax({
 				url: api.endpoint + action,
 				method: method,
-				data: data
+				data: JSON.stringify(data),
+				contentType: 'application/json'
 			});
 		} else {
 			return $.ajax({
 				url: api.endpoint + action,
 				method: method,
 				data: data,
+				dataType: 'json',
+				contentType: 'application/json',
 				headers: {
 				    'Authorization': 'Bearer ' + api.getAuthToken()
 			  	}

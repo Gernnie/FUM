@@ -54,7 +54,7 @@
 								</div>
 								<div class="item-inner">
 									<div class="item-input">
-										<input type="tel" name="mobile" placeholder="Mobile" />
+										<input type="tel" name="mobile" placeholder="Mobile" required />
 									</div>
 									<div class="item-text input-error"></div>
 								</div>
@@ -91,15 +91,37 @@
 								</div>
 							</div>
 						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media">
+									<i class="material-icons">lock_outline</i>
+								</div>
+								<div class="item-inner">
+									<div class="item-input">
+										<input type="password" name="confirm_password" data-toggle="show-hide-password" placeholder="Confirm Password" required />
+									</div>
+									<div class="item-after show-hide-password">
+										<a class="color-gray" href="#" title="Show" data-action="show-hide-password">
+											<i class="material-icons">visibility</i>
+										</a>
+									</div>
+									<div class="item-text input-error"></div>
+								</div>
+							</div>
+						</li>
 
 
 						<!-- Custom User Fields -->
 						<li>
 							<div class="item-content">
+								<div class="item-media">
+									<i class="material-icons">date_range</i>
+								</div>
 								<div class="item-inner">
 									<div class="item-input">
-										<input type="text" id="calendar-basic" name="date_of_birth" placeholder="Date of Birth" readonly />
+										<input type="text" id="calendar-basic" name="date_of_birth" placeholder="Date of Birth" readonly required />
 									</div>
+									<div class="item-text input-error"></div>
 								</div>
 							</div>
 						</li>
@@ -132,7 +154,7 @@
 								</div>
 								<div class="item-inner">
 									<div class="item-input">
-										<input style="margin-top: 10px;" type="checkbox" name="terms" placeholder="Terms and Conditions" required />
+										<input style="margin-top: 13px;" type="checkbox" name="terms" placeholder="Terms and Conditions" required />
 									</div>
 									<div class="item-text input-error"></div>
 								</div>
