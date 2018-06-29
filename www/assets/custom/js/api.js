@@ -1,6 +1,6 @@
 var api = {
-	//endpoint:  "http://fumoddjobs-dev.threepointturn.com/api/",
-	endpoint:  "http://localhost:6234/api/",
+	endpoint:  "http://fumoddjobs-dev.threepointturn.com/api/",
+	//endpoint:  "http://localhost:6234/api/",
 	authToken: null,
 
 	callApi:function (action, method, data){
